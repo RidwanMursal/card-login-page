@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+
+  color: hsl(278, 68%, 11%);
+}
+
+.violet {
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+}
+#space-background {
+  background-image: url("./assets/images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 500px) {
+  #space-background {
+    background-image: url("./assets/images/bg-main-mobile.png");
+  }
+
+  #front-card,
+  #back-card {
+    background-size: contain;
+  }
+}
+
+#front-card {
+  background-image: url("./assets/images/bg-card-front.png");
+  background-repeat: no-repeat;
+
+  /* background-size: cover; */
+}
+
+#back-card {
+  background-image: url("./assets/images/bg-card-back.png");
+  background-repeat: no-repeat;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
